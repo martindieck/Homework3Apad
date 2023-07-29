@@ -14,6 +14,9 @@ def hello_world(firstName):
     if firstName == "Martin":
         succesM = {"name":"Dieck", "code":200}
         return jsonify(succesM), 200
+    elif firstName == "Abhay":
+        succesM = {"name":"Samant", "code":200}
+        return jsonify(succesM), 200
     else:
         errorM = {"error": "User Not Found", "code":404}
         return jsonify(errorM), 404
